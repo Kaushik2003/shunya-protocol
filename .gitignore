@@ -1,2 +1,35 @@
+.worktrees/
 .gemini/
 gha-creds-*.json
+
+# Node / JS
+node_modules/
+*.log
+.turbo/
+
+# Env
+.env
+.env.local
+
+# Local tool caches
+.xdg-data/
+.xdg-cache/
+.xdg-config/
+.codex
+
+# Builds
+dist/
+build/
+.next/
+
+# ZK artifacts
+*.zkey
+*.ptau
+*.wasm
+*.r1cs
+*.sym
+packages/circuits/build/
+
+# Foundry
+packages/contracts/out/
+packages/contracts/cache/
