@@ -1,0 +1,23 @@
+{
+  "name": "@shunya/db",
+  "version": "0.0.1",
+  "main": "./src/index.ts",
+  "scripts": {
+    "generate": "drizzle-kit generate",
+    "migrate": "bun src/migrate.ts",
+    "push": "drizzle-kit push",
+    "studio": "drizzle-kit studio"
+  },
+  "dependencies": {
+    "drizzle-orm": "^0.32.0",
+    "@neondatabase/serverless": "^0.9.5",
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "drizzle-kit": "^0.23.0",
+    "typescript": "^5.5.0",
+    "@types/bun": "^1.1.0",
+    "@types/ws": "^8.5.0"
+  }
+}
+

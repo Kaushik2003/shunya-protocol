@@ -1,0 +1,10 @@
+{
+  "name": "@shunya/circuits",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "build": "bash scripts/build.sh",
+    "setup": "bash scripts/trusted_setup.sh"
+  }
+}
+

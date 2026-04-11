@@ -1,0 +1,10 @@
+{
+  "name": "@shunya/js",
+  "version": "0.1.0",
+  "main": "./src/index.ts",
+  "scripts": {
+    "build": "bun build src/index.ts --outfile dist/shunya.js --format iife --global-name Shunya --minify",
+    "lint": "tsc --noEmit"
+  },
+  "devDependencies": { "typescript": "^5.5.0", "@types/bun": "^1.1.0" }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "shunya-protocol",
+  "private": true,
+  "version": "0.0.1",
+  "packageManager": "pnpm@9.15.0",
+  "scripts": {
+    "dev:api": "turbo run dev --filter=@shunya/api",
+    "dev:popup": "turbo run dev --filter=@shunya/popup",
+    "dev:dashboard": "turbo run dev --filter=@shunya/dashboard",
+    "build": "turbo run build",
+    "build:packages": "turbo run build --filter=./packages/*",
+    "lint": "turbo run lint",
+    "db:generate": "pnpm --filter @shunya/db run generate",
+    "db:migrate": "pnpm --filter @shunya/db run migrate",
+    "infra:up": "docker compose -f infra/docker-compose.yml up -d",
+    "infra:down": "docker compose -f infra/docker-compose.yml down"
+  },
+  "devDependencies": {
+    "turbo": "^2.9.6"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ]
+}

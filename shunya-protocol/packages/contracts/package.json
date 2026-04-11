@@ -1,0 +1,10 @@
+{
+  "name": "@shunya/contracts",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "build": "forge build",
+    "deploy:sepolia": "forge script script/Deploy.s.sol --rpc-url $BASE_SEPOLIA_RPC --broadcast --verify"
+  }
+}
+

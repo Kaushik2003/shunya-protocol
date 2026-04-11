@@ -1,0 +1,33 @@
+{
+  "name": "@shunya/api",
+  "private": true,
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "bun --watch src/index.ts",
+    "start": "bun src/index.ts",
+    "lint": "tsc --noEmit"
+  },
+  "dependencies": {
+    "hono": "^4.5.0",
+    "drizzle-orm": "^0.32.0",
+    "@neondatabase/serverless": "^0.9.5",
+    "ws": "^8.18.0",
+    "bullmq": "^5.21.0",
+    "ioredis": "^5.4.1",
+    "zod": "^3.23.8",
+    "jose": "^5.9.0",
+    "argon2": "^0.41.1",
+    "circomlibjs": "^0.1.7",
+    "viem": "^2.19.0",
+    "@coinbase/coinbase-sdk": "^0.10.0",
+    "@zkverify/sdk": "^0.1.0",
+    "@shunya/db": "workspace:*",
+    "@shunya/shared": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0",
+    "@types/bun": "^1.1.0",
+    "@types/ws": "^8.5.0"
+  }
+}
+
