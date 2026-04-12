@@ -6,7 +6,7 @@ export async function submitProofToZkVerify(
   publicSignals: string[]
 ): Promise<ZkVerifyReceipt> {
   // Lazy import to avoid startup errors if SDK not yet installed
-  const { ZkVerify } = await import('@zkverify/sdk' as any);
+  const { ZkVerify } = await import('@stakefish/sdk-zkverify' as any);
 
   const zk = new ZkVerify({
     rpcUrl:     env.ZKVERIFY_RPC_URL,

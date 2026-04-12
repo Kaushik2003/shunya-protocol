@@ -1,11 +1,18 @@
+'use client';
+import { useFormState } from 'react-dom';
 import { registerAction } from './actions';
 
 export default function RegisterPage() {
+  const [state, formAction] = useFormState(registerAction, { error: '' });
+
   return (
     <main style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '100vh' }}>
       <div style={{ background: 'white', borderRadius: '12px', padding: '2rem', width: '400px', boxShadow: '0 1px 3px rgba(0,0,0,0.1)' }}>
         <h1 style={{ marginTop: 0, color: '#1f2937', fontSize: '1.5rem' }}>Create your Shunya account</h1>
-        <form action={registerAction}>
+        {state?.error && (
+          <p style={{ color: '#ef4444', marginBottom: '1rem', fontSize: '0.875rem' }}>{state.error}</p>
+        )}
+        <form action={formAction}>
           <label style={{ display: 'block', marginBottom: '1rem' }}>
             <span style={{ color: '#374151', fontSize: '0.875rem', display: 'block', marginBottom: '0.25rem' }}>Organization name</span>
             <input name="orgName" type="text" required

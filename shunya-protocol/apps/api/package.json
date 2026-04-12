@@ -20,7 +20,7 @@
     "circomlibjs": "^0.1.7",
     "viem": "^2.19.0",
     "@coinbase/coinbase-sdk": "^0.10.0",
-    "@zkverify/sdk": "^0.1.0",
+    "@stakefish/sdk-zkverify": "^0.0.2",
     "@shunya/db": "workspace:*",
     "@shunya/shared": "workspace:*"
   },

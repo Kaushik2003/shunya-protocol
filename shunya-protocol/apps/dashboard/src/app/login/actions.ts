@@ -7,7 +7,7 @@ import { users } from '@shunya/db';
 import { eq } from 'drizzle-orm';
 import { lucia } from '../../../lib/auth';
 
-export async function loginAction(formData: FormData) {
+export async function loginAction(_prevState: any, formData: FormData) {
   const email    = formData.get('email')    as string;
   const password = formData.get('password') as string;
 

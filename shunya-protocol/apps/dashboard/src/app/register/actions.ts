@@ -7,7 +7,7 @@ import { db } from '@shunya/db';
 import { users, organizations } from '@shunya/db';
 import { lucia } from '../../../lib/auth';
 
-export async function registerAction(formData: FormData) {
+export async function registerAction(_prevState: any, formData: FormData) {
   const orgName  = formData.get('orgName')  as string;
   const email    = formData.get('email')    as string;
   const password = formData.get('password') as string;

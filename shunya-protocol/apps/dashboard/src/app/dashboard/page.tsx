@@ -1,4 +1,4 @@
-import { getSession } from '../../lib/getSession';
+import { getSession } from '../../../lib/getSession';
 import { db } from '@shunya/db';
 import { sessions, apiKeys } from '@shunya/db';
 import { eq, count, and, gte } from 'drizzle-orm';
